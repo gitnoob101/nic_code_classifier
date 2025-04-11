@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         resultsContainer.innerHTML = "<p>🔍 Searching...</p>";
 
         // API request
-        fetch("http://127.0.0.1:9040/search", {
+        fetch("http://127.0.0.1:9060/search", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ query: query, k: 5 }),
